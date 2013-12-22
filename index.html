@@ -1,0 +1,13 @@
+---
+layout: default
+title: Anotações do Hercules
+---
+
+<ul class="posts">
+  {% for post in site.posts %}
+    <li class="post-reference">
+      <span class="date">{{ post.date | date: "%d-%m-%Y" }}</span>
+      <a href="{{ post.url }}" class="title">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

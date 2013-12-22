@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
+
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+    </header>
+
+    <div class="contact">
+      <a class="link" href="https://github.com/hlmerscher" target="_blank">github</a>
+      <a class="link" href="https://twitter.com/hlmerscher" target="_blank">twitter</a>
+      <a class="link" href="http://linkedin.com/in/herculesmerscher/" target="_blank">linkedin</a>
+    </div>
+
+    <div class="content">
+      {{ content }}
+    </div>
+  </body>
+</html>

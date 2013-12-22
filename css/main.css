@@ -1,0 +1,79 @@
+*, *:before, *:after {
+  box-sizing: border-box; 
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1em;
+  font-family: sans-serif;
+}
+
+.header .title {
+  background-color: #61B737;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact .link {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #61B737;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.contact .link:hover {
+  background-color: #006600;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 770px;
+}
+
+.posts {
+  list-style: none;
+  text-align: left;
+  padding: 20px;
+}
+
+.post-reference {
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #61B737;
+  margin-bottom: 10px;
+}
+
+.posts .date {
+  color: gray;
+  margin-right: 10px;
+}
+
+.posts .title {
+  color: #61B737;
+  text-decoration: none;
+}
+
+.posts .title:hover {
+  color: #006600;
+  text-decoration: none;
+}
+
+.posts .content {
+  font-size: 1em;
+}
