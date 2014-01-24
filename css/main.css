@@ -24,20 +24,13 @@ body {
 
 .contact {
   text-align: center;
-  font-size: 0.85em;
 }
 
 .contact .link {
-  display: inline-block;
   text-decoration: none;
-  background-color: #61B737;
-  color: white;
-  font-weight: bold;
   padding: 10px;
-}
-
-.contact .link:hover {
-  background-color: #006600;
+  font-size: 2em;
+  color: #61B737;
 }
 
 .content {
