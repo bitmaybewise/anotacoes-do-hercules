@@ -46,9 +46,6 @@ body {
 
 .post-reference {
   width: 90%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   color: #61B737;
   margin-bottom: 10px;
 }
@@ -59,8 +56,14 @@ body {
 }
 
 .posts .title {
+  display: block;
+  margin-bottom: 20px;
   color: #61B737;
   text-decoration: none;
+  
+  @media (min-width: 520px) {
+    display: inline;
+  }
 }
 
 .posts .title:hover {
