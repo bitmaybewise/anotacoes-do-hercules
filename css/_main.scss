@@ -40,7 +40,7 @@ body {
 
 .posts {
   list-style: none;
-  text-align: left;
+  text-align: justify;
   padding: 20px;
 }
 
@@ -71,6 +71,4 @@ body {
   text-decoration: none;
 }
 
-.posts .content {
-  font-size: 1em;
-}
+.posts .content { font-size: 1em; }

@@ -23,7 +23,7 @@ Veja a pergunta e tente responder, se acertar deixe-a de lado e passe para a pr�
 
 Repita esse processo no dia seguinte, quando perceber que as perguntas estão fáceis aumente o intervalo da revisão. Aumente em alguns dias, depois em uma semana ou duas, quanto mais segura for sua reposta maior o tempo de intervalo você pode estabelecer. Quando perceber que já sabe de fato, pode remover essa pergunta. 
 
-Felizmente, há uma opção melhor do que utilizar cartõezinhos de papel. Existe um software chamado [Anki](http://ankisrs.net/), disponível para várias plataformas como Windows, Linux, Mac, iOS, Android e Web. O Anki tem um algoritmo muito bom que decide para você quando está na hora de revisar um item que você adicionou, e também permite você criar vários decks, assim você pode separar por assuntos que você está estudando, categorizar, adicionar imagens e áudio, etc. Se você criar a conta web você ainda poderá sincronizar seus cartões entre vários dispositivos. O Anki é muito útil e tem um bocado de opções, divirta-se!
+Felizmente, há uma opção melhor do que utilizar cartõezinhos de papel. Existe um software chamado [Anki](http://ankisrs.net/), disponível para várias plataformas como Windows, Linux, Mac, iOS, Android e Web. O Anki tem um algoritmo muito bom que decide para você quando está na hora de revisar um item que você adicionou, e também permite criar vários decks, assim você pode separar por assuntos que você está estudando, categorizar, adicionar imagens e áudio, etc. Se você criar a conta web você ainda poderá sincronizar seus cartões entre vários dispositivos. O Anki é muito útil e tem um bocado de opções, divirta-se!
 
 #### Veja mais em:
 
