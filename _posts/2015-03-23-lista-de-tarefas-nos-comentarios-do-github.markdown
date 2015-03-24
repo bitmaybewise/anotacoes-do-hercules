@@ -5,7 +5,7 @@ date:   2015-03-23 22:46
 tags: github markdown
 ---
 
-A pouco tempo descobri que o [Github Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/) possibilita a criação de [listas de tarefas](https://github.com/blog/1375%0A-task-lists-in-gfm-issues-pulls-comments) nos comentários, pull requests e issues. Veja um exemplo:
+Há pouco tempo descobri que o [Github Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/) possibilita a criação de [listas de tarefas](https://github.com/blog/1375%0A-task-lists-in-gfm-issues-pulls-comments) nos comentários, pull requests e issues. Veja um exemplo:
 
 {% highlight html %}
 - [ ] incompleto
