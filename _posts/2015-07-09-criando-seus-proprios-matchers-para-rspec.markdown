@@ -1,8 +1,8 @@
 ---
-layout: post
-title:  "Criando seus próprios matchers para RSpec"
-date:   2015-07-09 00:19:00
-tags: ruby rspec
+layout:  post
+title:   "Criando seus próprios matchers para RSpec"
+date:    2015-07-09 00:19:00
+tags:    ruby rspec
 ---
 
 Escrevendo código para nossos programas costumamos usar várias técnicas para evitar repetições. Nos testes automatizados não é diferente, é código e precisa ser mantido também, precisa ser algo fácil de entender.
