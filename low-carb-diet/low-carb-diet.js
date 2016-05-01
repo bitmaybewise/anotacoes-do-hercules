@@ -7,7 +7,8 @@ var informations = [
   { day: '2016-04-03', weight: 76.5, abdomen: 85.5, thigh: 58,   arm: 28   },
   { day: '2016-04-09', weight: 75.5, abdomen: 84,   thigh: 56,   arm: 27.5 },
   { day: '2016-04-16', weight: 76,   abdomen: 86,   thigh: 57.5, arm: 28   },
-  { day: '2016-04-23', weight: 74.6, abdomen: 84,   thigh: 57,   arm: 27   }
+  { day: '2016-04-23', weight: 74.6, abdomen: 84,   thigh: 57,   arm: 27   },
+  { day: '2016-05-01', weight: 74.3, abdomen: 83,   thigh: 57.5, arm: 27.5 }
 ];
 
 var days = informations.map(function(info) { return info.day; }),
