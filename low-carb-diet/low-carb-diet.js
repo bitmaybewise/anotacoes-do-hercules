@@ -11,7 +11,9 @@ var informations = [
   { day: '2016-05-01', weight: 74.3, abdomen: 83,   thigh: 57.5, arm: 27.5 },
   { day: '2016-05-07', weight: 73.2, abdomen: 82,   thigh: 58.5, arm: 27.5 },
   { day: '2016-05-14', weight: 72.8, abdomen: 80.5, thigh: 58.5, arm: 27.5 },
-  { day: '2016-05-28', weight: 71.1, abdomen: 81,   thigh: 55,   arm: 28   }
+  { day: '2016-05-28', weight: 71.1, abdomen: 81,   thigh: 55,   arm: 28   },
+  { day: '2016-06-04', weight: 71.3, abdomen: 81,   thigh: 57,   arm: 27   },
+  { day: '2016-06-11', weight: 70.4, abdomen: 80,   thigh: 56,   arm: 27   }
 ];
 
 var days = informations.map(function(info) { return info.day; }),
