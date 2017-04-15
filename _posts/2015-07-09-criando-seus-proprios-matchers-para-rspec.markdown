@@ -9,7 +9,7 @@ Escrevendo código para nossos programas costumamos usar várias técnicas para 
 
 Digamos que temos um método que devolve uma resposta http que vamos retornar como uma resposta do [rack](https://github.com/rack/rack).
 
-```ruby
+{% highlight ruby %}
 def responds_ok(message)
   [200, { 'Content-Type' => 'text/html' }, [message]]
 end
@@ -26,11 +26,11 @@ RSpec.describe '#responds_ok' do
     expect(response[2]).to eq [msg]
   end
 end
-```
+{% endhighlight %}
 
 Essas specs são bem simples, mas força a pessoa que vai lê-las a entender que o retorno é um array, que o primeiro valor é o status e o terceiro valor é a mensagem, e nesse último caso, que a mensagem seja um outro array. Para quem escreveu esse código inicialmente pode parecer algo óbvio, mas temos uma maneira melhor de fazer essas verificações. Uma boa alternativa nesse caso é criar nossos próprios matchers.
 
-```ruby
+{% highlight ruby %}
 require 'rspec/expectations'
 
 RSpec::Matchers.define :be_ok do
@@ -44,13 +44,13 @@ RSpec::Matchers.define :have_message do |message|
     response[2].join == message
   end
 end
-```
+{% endhighlight %}
 
 Matchers podem simplesmente verificar um valor, ou comparar diferentes valores passados como parâmetro. No código acima podemos ver que é bem simples definir um novo matcher com RSpec, basta passar um bloco para o método __match__ que retorne um valor booleano.
 
 Desta maneira, as specs podem ser escritas da seguinte maneira:
 
-```ruby
+{% highlight ruby %}
 RSpec.describe '#responds_ok' do
   it 'returns status ok' do
     response = responds_ok('my message')
@@ -63,7 +63,7 @@ RSpec.describe '#responds_ok' do
     expect(response).to have_message(msg)
   end
 end
-```
+{% endhighlight %}
 
 Bem mais agradável aos olhos, não é mesmo?!
 

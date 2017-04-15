@@ -13,7 +13,7 @@ Aqui vou listar algumas dessas novas funcionalidades que mais curti e utilizo co
 
 ES5:
 
-```javascript
+{% highlight javascript %}
 numbers.map(function (v) { return v + 1; });
 
 numbers.forEach(function (v) { 
@@ -21,11 +21,11 @@ numbers.forEach(function (v) {
     console.log(v);
   } 
 });
-```
+{% endhighlight %}
 
 ES6:
 
-```javascript
+{% highlight javascript %}
 numbers.map(v => v + 1);
 
 numbers.forEach(v => { 
@@ -33,103 +33,103 @@ numbers.forEach(v => {
     console.log(v);
   }
 });
-```
+{% endhighlight %}
 
 ### Default parameter values
 
 ES5:
 
-```javascript
+{% highlight javascript %}
 function f(x, y) {
   if (y === undefined) {
     y = 1;
   }
   return x + y;
 }
-```
+{% endhighlight %}
 
 ES6:
 
-```javascript
+{% highlight javascript %}
 function f(x, y = 1) {
   return x + y;
 }
-```
+{% endhighlight %}
 
 ### String interpolation
 
 ES5:
 
-```javascript
+{% highlight javascript %}
 var customer = { name: 'Foo' };
 var message = "Hello " + customer.name + ". How are you?";
-```
+{% endhighlight %}
 
 ES6:
 
-```javascript
+{% highlight javascript %}
 var customer = { name: 'Foo' };
 var message = `Hello ${customer.name}. How are you?`
-```
+{% endhighlight %}
 ### Method properties
 
 ES5:
 
-```javascript
+{% highlight javascript %}
 obj = {
   foo: function() {
     // do something
   }
 }
-```
+{% endhighlight %}
 
 ES6:
 
-```javascript
+{% highlight javascript %}
 obj = {
   function foo() {
     // do something
   }
 }
-```
+{% endhighlight %}
 
 ### Array matching
 
 ES5:
 
-```javascript
+{% highlight javascript %}
 var list = [1, 2, 3];
 var a = list[0], b = list[1], c = list[2];
-```
+{% endhighlight %}
 
 ES6:
 
-```javascript
+{% highlight javascript %}
 var list = [1, 2, 3];
 var [a, b, c] = list;
-```
+{% endhighlight %}
 
 ### Object matching
 
 ES5:
 
-```javascript
+{% highlight javascript %}
 var obj = { firstName: 'Hercules', lastName: 'Merscher' };
 var firstName = obj.firstName;
 var lastName = obj.lastName;
-```
+{% endhighlight %}
 
 ES6:
 
-```javascript
+{% highlight javascript %}
 var { firstName, lastName } = { firstName: 'Hercules', lastName: 'Merscher' };
-```
+{% endhighlight %}
 
 ### Modules
 
 ES5:
 
-```javascript
+{% highlight javascript %}
 // math.js
 Math = {};
 Math.pi = 3.14;
@@ -139,11 +139,11 @@ Math.sum = function(x, y) {
 
 // app.js
 var mySum = Math.sum(1, 2) + Math.pi;
-```
+{% endhighlight %}
 
 ES6:
 
-```javascript
+{% highlight javascript %}
 // math.js
 export {
   pi: 3.14,
@@ -160,7 +160,7 @@ var mySum = Math.sum(1, 2) + Math.pi;
 // other-app.js
 import { sum, pi } from "math";
 var mySum = sum(1, 2) + pi;
-```
+{% endhighlight %}
 
 ### E o restante?
 

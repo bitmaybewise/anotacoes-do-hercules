@@ -11,16 +11,16 @@ Atualmente é muito comum computadores terem mais de um processador, o que nos p
 
 Veja este exemplo, onde uma operação é realizada de forma sequencial:
 
-```scala
+{% highlight scala %}
 val list = (1 to 5000).toList
 list.map(_ + 1)
-```
+{% endhighlight %}
 
 Para realizar a mesma operação em paralelo, basta invocarmos o método __par__ em nossa lista. Assim podemos usar a coleção paralela da mesma maneira que usariamos de maneira sequencial:
 
-```scala
+{% highlight scala %}
 list.par.map(_ + 1)
-```
+{% endhighlight %}
 
 As coleções paralelas são integradas com a bibliotecas de coleções do Scala, o que nós dá algumas estruturas de dados prontas para uso:
 
@@ -35,7 +35,7 @@ As coleções paralelas são integradas com a bibliotecas de coleções do Scala
 
 Mais alguns exemplos:
 
-```scala
+{% highlight scala %}
 // somando via fold
 val numbers = (1 to 5000).toArray.par
 numbers.fold(0)(_ + _)
@@ -47,11 +47,11 @@ names.filter(_.length >= 6)
 // uma outra maneira de criar uma coleção paralela
 import scala.collection.parallel.mutable.ParArray
 val numbers = ParArray(1,2,3,4,5)
-```
+{% endhighlight %}
 
 Uma coleção paralela, mesmo sendo processada em diferentes ordens, irá reorganizar os elementos na ordem original. Veja:
 
-```scala
+{% highlight scala %}
 val list = (1 to 10).toList.par
 list: scala.collection.parallel.immutable.ParSeq[Int] = ParVector(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 
@@ -60,11 +60,11 @@ res1: scala.collection.parallel.immutable.ParSeq[Int] = ParVector(11, 12, 13, 14
 
 list.map(_ + 10)
 res2: scala.collection.parallel.immutable.ParSeq[Int] = ParVector(11, 12, 13, 14, 15, 16, 17, 18, 19, 20)
-```
+{% endhighlight %}
 
 ### Cuidado com operações mutáveis!
 
-```scala
+{% highlight scala %}
 var sum = 0
 
 val list = (1 to 5000).toList.par
@@ -76,7 +76,7 @@ sum = 0
 
 list.foreach(sum += _); sum
 res2: Int = 12498410
-```
+{% endhighlight %}
 
 Como pode ver nos exemplos acima, cada vez que a variável __sum__ é reiniciada para 0, e usamos __foreach__ para realizar a soma, o resultado é diferente. Isso acontece por conta de várias threads alterando o valor da mesma variável ao mesmo tempo, algo que não teriamos com uma operação sequencial.
 
