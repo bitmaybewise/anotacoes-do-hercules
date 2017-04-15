@@ -4,7 +4,12 @@ layout: default
 
 <div class="posts">
   <h2 class="title">{{ page.title }}</h2>
-  <p class="date">{{ page.date | date: "%d-%m-%Y" }}</p>
+  <p class="date">
+    {{ page.date | date: "%d-%m-%Y" }}
+    {% if page.updated_at %}
+      atualizado em {{ page.updated_at | date: "%d-%m-%Y" }}
+    {% endif %}
+  </p>
   <div class="content">
     {{ content }}
   </div>
