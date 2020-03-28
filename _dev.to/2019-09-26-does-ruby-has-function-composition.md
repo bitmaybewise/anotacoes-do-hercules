@@ -1,4 +1,6 @@
-# Introduction
+# Does Ruby has function composition
+
+## Introduction
 
 What's function composition? Why it matters?
 
@@ -17,7 +19,7 @@ When we want to combine 2 or more functions, we can use the `.` operator in Hask
 
 This possibility give us a degree of flexibility, as we are able to define new functions re-using previous defined functions to create a new one. Thumbs up for productivity!
 
-# What about Ruby?
+## What about Ruby?
 
 Ruby is multi-paradigm language. It's true that it includes some functional features, but it doesn't have high order functions. Well, at least not as we are used to in Haskell or Javascript.
 
@@ -54,7 +56,7 @@ Not bad at all! Thanks Ruby core team for the `>>` and `<<` operators for `Proc`
 
 But Ruby is an object oriented programming language at its core. Should we ditch classes and objects in favour of using lambdas everywhere?
 
-# Object oriented... Object oriented everywhere!
+## Object oriented... Object oriented everywhere!
 
 In object oriented languages, classes, objects and methods are used to represent behaviours instead of functions. This is the way we use Ruby on a daily basis, cause in Ruby everything is an object, remember?
 
@@ -99,7 +101,7 @@ puts (filter.curry[FizzBuzz.new] >> sum).call(numbers)
 
 This way we can even mix objects and lambdas.
 
-# An alternative way to compose
+## An alternative way to compose
 
 Well, on Ruby 2.6+ we have the `>>` and `<<` operators to compose `lambdas`. But what about previous versions of Ruby?
 
@@ -118,7 +120,7 @@ puts sum_fizz_buzz.call(numbers)
 
 Almost everything can be solved just with... functions. :)
 
-# References
+## References
 
 - http://learnyouahaskell.com/higher-order-functions
 - https://ruby-doc.org/core-2.6/Proc.html#method-i-to_proc
