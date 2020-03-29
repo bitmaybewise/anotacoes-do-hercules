@@ -1,3 +1,5 @@
+$main-color: #1abc9c;
+
 *, *:before, *:after {
   box-sizing: border-box; 
 }
@@ -6,11 +8,11 @@ body {
   width: 100%;
   margin: 0 auto;
   font-size: 1em;
-  font-family: sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .header .title {
-  background-color: #61B737;
+  background-color: $main-color;
   font-weight: bold;
   padding: 10px;
   text-align: center;
@@ -30,7 +32,7 @@ body {
   text-decoration: none;
   padding: 10px;
   font-size: 2em;
-  color: #61B737;
+  color: $main-color;
 }
 
 .content {
@@ -46,7 +48,7 @@ body {
 
 .post-reference {
   width: 90%;
-  color: #61B737;
+  color: $main-color;
   margin-bottom: 10px;
 }
 
@@ -58,7 +60,7 @@ body {
 .posts .title {
   display: block;
   margin-bottom: 20px;
-  color: #61B737;
+  color: $main-color;
   text-decoration: none;
   
   @media (min-width: 520px) {
