@@ -5,7 +5,7 @@ date:   2020-03-28
 tags: ruby, fp, functional, funcional
 ---
 
-# Introdução
+## Introdução
 
 O que é function composition? Ou em bom português, composição de função. Mas vou me ater aos termos técnicos aqui em inglês, pois prefiro evitar traduções técnicas.
 
@@ -24,7 +24,7 @@ Quando queremos combinar 2 ou mais funções, nós podemos usar o operador `.` e
 
 Essa possibilidade nos dá um certo grau de flexibilidade, já que é possível definir novas funções re-utilizando funções já existentes para criar uma nova. Joinha para produtividade!
 
-# E o Ruby?
+## E o Ruby?
 
 Ruby é uma linguagem multi-paradigma. É verdade que ela inclui algumas funcionalidades do paradigma funcional, mas não tem high order functions. Bem, pelo menos não como nós estamos acostumados a ver em Haskell e Javascript.
 
@@ -61,7 +61,7 @@ Nada mal! Obrigado ao Ruby core team pelos operadores `>>` e `<<` para `Proc`. :
 
 Mas Ruby é uma linguagem de programa orientada a objetos em sua essência. Devemos parar de usar objetos em favor de lambdas por todo lado?
 
-# Orientação a objetos... orientação a objetos em todo lugar!
+## Orientação a objetos... orientação a objetos em todo lugar!
 
 Em linguagens orientadas a objetos, objetos e métodos são utilizados para representar comportamentos ao invés de funções. Esse é o jeito que nós utilizamos Ruby no dia a dia, porque em Ruby tudo é um objeto, lembra?
 
@@ -106,7 +106,7 @@ puts (filter.curry[FizzBuzz.new] >> sum).call(numbers)
 
 Desse jeito nós podemos misturar objetos e lambdas.
 
-# Um jeito alternativo de composição
+## Um jeito alternativo de composição
 
 Bem, no Ruby 2.6+ nós temos os operadores `>>` e `<<` para compor `lambdas`. Mas o que dizer das versões anteriores?
 
@@ -125,7 +125,7 @@ puts sum_fizz_buzz.call(numbers)
 
 Quase tudo pode ser resolvido com apenas... funções. :)
 
-# Referências
+## Referências
 
 - [http://learnyouahaskell.com/higher-order-functions](http://learnyouahaskell.com/higher-order-functions)
 - [https://ruby-doc.org/core-2.6/Proc.html#method-i-to_proc](https://ruby-doc.org/core-2.6/Proc.html#method-i-to_proc)
