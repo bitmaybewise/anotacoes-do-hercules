@@ -373,6 +373,6 @@ Extraí `Task` e `Do` em uma minúscula biblioteca: [https://github.com/hlmersch
 
 E aí, podemos fazer melhor? O que acha?
 
-Para escrever scripts ou pequenas aplicações de linha de comando, essa abordagem pode ser incômoda. Entretanto, para aplicações maiores, começa a fazer diferença.
+Para escrever scripts ou pequenas aplicações de linha de comando, essa abordagem pode ser incômoda. Mas, vou continuar pensando em melhores maneiras de fazer gerenciamento de erros em Go.
 
 Agradecimentos ao [@tiagocesar](https://dev.to/tiagocesar), por revisar o artigo original! :)
